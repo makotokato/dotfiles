@@ -1,0 +1,30 @@
+[ui]
+username = Makoto Kato <m_kato@ga2.so-net.ne.jp>
+
+[extensions]
+mq = 
+histedit = 
+rebase = 
+fsmonitor = 
+
+[diff]
+git = 1
+showfunc = 1
+unified = 8
+nodates = 1
+
+[default]
+qnew = -U
+
+[watchman]
+mode = on
+
+[color]
+status.modified = magenta bold
+status.added = green bold
+status.removed = red bold
+status.deleted = cyan bold
+status.unknown = blue bold
+status.ignored = black bold
+mq.uncommitted = green bold
+mq.applied = white bold

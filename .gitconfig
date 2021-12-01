@@ -1,0 +1,21 @@
+[user]
+	email = m_kato@ga2.so-net.ne.jp
+	name = Makoto Kato
+[color]
+	ui = auto
+[core]
+	editor = vim
+[http]
+	postBuffer = 1048576000
+[credential]
+	helper = /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
+[merge]
+	tool = vscode
+[mergetool "vscode"]
+	cmd = code --wait $MERGED
+[diff]
+	tool = vscode
+[difftool "vscode"]
+	cmd = code --wait --diff $LOCAL $REMOTE
+[pull]
+	ff = only
