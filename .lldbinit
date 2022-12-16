@@ -1,0 +1,4 @@
+settings set target.inline-breakpoint-strategy always
+settings append target.exec-search-paths /mozilla/geckoview/objdir/toolkit/library/build
+settings append target.exec-search-paths /mozilla/geckoview/objdir/mozglue/build
+settings append target.exec-search-paths /mozilla/geckoview/objdir/security
