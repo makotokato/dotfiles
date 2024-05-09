@@ -1,0 +1,9 @@
+[Unit]
+Description = WebKit source sync timer
+
+[Timer]
+OnCalendar = *-*-* 04:00:00
+AccuracySec = 1s
+
+[Install]
+WantedBy = timers.target

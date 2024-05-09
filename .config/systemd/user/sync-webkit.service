@@ -1,0 +1,10 @@
+[Unit]
+Description = WebKit source sync
+
+[Service]
+WorkingDirectory = /other/WebKit
+Type = oneshot
+ExecStart = git pull
+
+[Install]
+WantedBy = multi-user.target
