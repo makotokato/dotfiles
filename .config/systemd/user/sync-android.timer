@@ -1,0 +1,9 @@
+[Unit]
+Description = AOSP source sync timer
+
+[Timer]
+OnCalendar = *-*-* 06:00:00
+AccuracySec = 1s
+
+[Install]
+WantedBy = timers.target

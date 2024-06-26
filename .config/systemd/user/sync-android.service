@@ -1,0 +1,10 @@
+[Unit]
+Description = AOSP source sync
+
+[Service]
+WorkingDirectory = /other/android
+Type = oneshot
+ExecStart = repo sync
+
+[Install]
+WantedBy = multi-user.target

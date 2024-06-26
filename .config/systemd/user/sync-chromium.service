@@ -1,0 +1,10 @@
+[Unit]
+Description = Chromium source sync
+
+[Service]
+WorkingDirectory = /other/chromium/src
+Type = oneshot
+ExecStart = /usr/bin/sh /home/makoto/bin/sync-chromium.sh
+
+[Install]
+WantedBy = multi-user.target
