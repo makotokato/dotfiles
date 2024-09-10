@@ -1,0 +1,9 @@
+[Unit]
+Description = Backup working repository timer
+
+[Timer]
+OnCalendar = Sat *-*-* 06:00:00
+AccuracySec = 1s
+
+[Install]
+WantedBy = timers.target

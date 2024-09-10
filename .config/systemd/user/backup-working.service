@@ -1,0 +1,10 @@
+[Unit]
+Description = Backup working repository
+
+[Service]
+WorkingDirectory = /mozilla
+Type = oneshot
+ExecStart = %h/.local/bin/sync-backup.sh
+
+[Install]
+WantedBy = multi-user.target
