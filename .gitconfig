@@ -6,16 +6,18 @@
 [core]
 	editor = vim
 [http]
-	postBuffer = 1048576000
+	postBuffer = 10M
+[cinnabar]
+	helper = /home/makoto/.mozbuild/git-cinnabar/git-cinnabar-helper
+	version-check = 1747206701
 [credential]
 	helper = /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
-[merge]
-	tool = vscode
-[mergetool "vscode"]
-	cmd = code --wait $MERGED
-[diff]
-	tool = vscode
-[difftool "vscode"]
-	cmd = code --wait --diff $LOCAL $REMOTE
 [pull]
 	ff = only
+[mergetool]
+	prompt = false
+[merge]
+	conflictstyle = diff3
+	tool = vimdiff
+[diff]
+	context = 8
