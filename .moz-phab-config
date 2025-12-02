@@ -1,0 +1,40 @@
+[ui]
+no_ansi = False
+hyperlinks = True
+
+[vcs]
+safe_mode = False
+
+[git]
+remote = upstream
+command_path = 
+
+[hg]
+command_path = hg
+
+[submit]
+auto_submit = False
+always_blocking = False
+warn_untracked = True
+
+[patch]
+apply_to = base
+create_bookmark = True
+create_topic = False
+create_branch = True
+always_full_stack = False
+branch_name_template = phab-D{rev_id}
+create_commit = True
+
+[updater]
+self_last_check = 1762943234
+self_auto_update = True
+get_pre_releases = False
+arc_last_check = 0
+
+[error_reporting]
+report_to_sentry = True
+
+[telemetry]
+enabled = True
+
